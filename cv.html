@@ -1,84 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Yuxuan Zhao">
-    <title>Yuxuan Zhao - CV</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        header {
-            background: #0039d4c5;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 5px 0 0;
-        }
-        nav {
-            background: #333;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background: #fff;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            text-align: center;
-            padding: 10px 0;
-            background: #333;
-            color: #fff;
-            font-size: 0.9rem;
-        }
-        .button {
-            display: inline-block;
-            background: #0078d4;
-            color: #fff;
-            padding: 10px 15px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .button:hover {
-            background: #005fa3;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal website of Yuxuan Zhao" />
+  <title>CV</title>
+  <style>
+    :root {
+      --max-width: 700px;
+      --primary-color: #007acc;
+      --text-color: #111;
+      --bg-color: #fff;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      padding: 30px 0;
+      border-top: 1px solid #eee;
+    }
+
+    a {
+      text-decoration: none;          /* 取消下划线 */
+      color: #007acc;                 /* 设置统一的链接颜色 */
+      font-family: system-ui, sans-serif;
+    }
+
+    a:hover {
+      text-decoration: underline;     /* 鼠标悬停时显示下划线（可选） */
+      color: #3a5fcd;                 /* 悬停时稍微变深一点 */
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .role-title {
+      font-weight: bold;
+      flex: 1;
+    }
+
+    .role-time {
+      color: #111;
+      text-align: right;
+    }
+
+    .lang-switcher {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
 
+<div class="lang-switcher">
+    <b>EN</b> | <a href="cv_zh.html">中</a>
+</div>
+
 <header>
-    <h1>赵宇轩, Yuxuan Zhao</h1>
+    <h1>Yuxuan Zhao</h1>
     <p>PhD Student | Department of Mathematics | University of Illinois Urbana-Champaign</p>
 </header>
 
@@ -90,13 +133,14 @@
     <a href="cv.html">CV</a>
 </nav>
 
+<main>
 <section id="cv">
     <h2>Curriculum Vitae</h2>
     
     <h3>Education</h3>
     <div class="container">
-        <span><b>University of Illinois Urbana-Champaign</b></span>
-        <span>Urbana, IL, USA | Aug 2023 - Present</span>
+        <span class="role-title">University of Illinois Urbana-Champaign</span>
+        <span class="role-time">Urbana, IL, USA | Aug 2023 - Present</span>
     </div>
     <p> PhD in Mathematics</p>
 
@@ -146,10 +190,10 @@
     <p><strong>Technical Skills:</strong> Python (NumPy, Pandas, SymPy); MATLAB; LaTeX; Microsoft Suite</p>
     <p><strong>Interests:</strong> Badminton, hiking, traveling</p>
 </section>
-
+</main>
 
 <footer>
-    <p>&copy; 2025 赵宇轩 / Yuxuan Zhao</p>
+    &copy; 2025 Yuxuan Zhao
 </footer>
 
 </body>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="赵宇轩的经历" />
+  <title>经历</title>
+  <style>
+    :root {
+      --max-width: 700px;
+      --primary-color: #007acc;
+      --text-color: #111;
+      --bg-color: #fff;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      padding: 30px 0;
+      border-top: 1px solid #eee;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007acc;
+      font-family: system-ui, sans-serif;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #3a5fcd;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .role-title {
+      font-weight: bold;
+      flex: 1;
+    }
+
+    .role-time {
+      color: #111;
+      text-align: right;
+    }
+
+    .lang-switcher {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switcher">
+    <a href="project.html">EN</a> | <b>中</b>
+  </div>
+
+  <header>
+    <h1>赵宇轩</h1>
+    <p>博士生｜数学系｜伊利诺伊大学厄巴纳-香槟分校</p>
+  </header>
+
+  <nav>
+    <a href="index_zh.html">关于我</a>
+    <a href="research_zh.html">研究方向</a>
+    <a href="project_zh.html">经历</a>
+    <a href="teaching_zh.html">教学历史</a>
+    <a href="cv_zh.html">个人简历</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>工作经历：</h2>
+      <div class="container">
+        <span class="role-title">PrairieLearn公司暑期实习生</span>
+        <span class="role-time">伊利诺伊州厄巴纳｜2025年6月 - 至今</span>
+      </div>
+      <ul>
+        <li>作为PrairieLearn项目的数学内容开发实习生（由Gates基金会支持），参与微积分I课程的交互式评估设计与实现。</li>
+        <li>将数学团队的教案翻译成完整可运行的PrairieLearn题目，使用Python（包括NumPy与SymPy）进行符号计算与自动评分。</li>
+        <li>根据教学需求编写定制化评分函数，适用于多种不同题型。</li>
+        <li>贡献额外数学题目，并撰写详细的PDF指南，便于编程团队实现。</li>
+        <li>与跨学科团队每两周会议协作，确保教学设计与技术实现一致。</li>
+      </ul>
+
+      <div class="container">
+        <span class="role-title">PrairieLearn项目贡献者</span>
+        <span class="role-time">伊利诺伊州厄巴纳｜2025年1月 - 2025年5月</span>
+      </div>
+      <ul>
+        <li>协助数学系的教学团队将微积分II作业迁移至PrairieLearn平台，推动平稳过渡。</li>
+        <li>分析并文档化生成题目变式的算法，帮助教师与开发者理解使用方式。</li>
+        <li>作为数学与编程的桥梁，向程序员清晰解释数学逻辑，使其无需专业背景也能实现题目。</li>
+        <li>使用Python（包括NumPy与SymPy）编写可视化脚本，增强题目清晰度与学生参与度。</li>
+      </ul>
+    </section>
+
+    <hr style="border: none; height: 1px; background-color: rgba(0, 0, 0, 0.1); margin: 10px 0;">
+
+    <section id="about">
+      <h2>培训经历：</h2>
+      <div class="container">
+        <span class="role-title"><a href="https://inmas.us">INMAS培训项目</a>（由NSF资助）</span>
+        <span class="role-time">伊利诺伊州厄巴纳｜2024年10月 - 2025年5月</span>
+      </div>
+      <ul>
+        <li>作为学员入选INMAS项目，该项目旨在培养面向商业、工业界与政府等领域参与就业的数学研究生。</li>
+        <li>完成四轮培训课程，内容涵盖Python数据分析（NumPy, Pandas）、应用统计（多种统计分布、假设检验）以及机器学习（监督学习、卷积神经网络、大语言模型等）。</li>
+        <li>与跨学科团队合作完成多个数据项目，并进行结业展示与汇报。</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 赵宇轩
+  </footer>
+</body>
+</html>
