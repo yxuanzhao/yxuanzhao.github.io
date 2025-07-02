@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="赵宇轩的个人简历" />
+  <title>简历</title>
+  <style>
+    :root {
+      --max-width: 700px;
+      --primary-color: #007acc;
+      --text-color: #111;
+      --bg-color: #fff;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      padding: 60px 20px 30px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header p {
+      margin: 0.5rem 0 0;
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px 0;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      padding: 30px 0;
+      border-top: 1px solid #eee;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007acc;
+      font-family: system-ui, sans-serif;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #3a5fcd;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    .role-title {
+      font-weight: bold;
+      flex: 1;
+    }
+
+    .role-time {
+      color: #111;
+      text-align: right;
+    }
+
+    .lang-switcher {
+      position: absolute;
+      top: 15px;
+      right: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="lang-switcher">
+    <a href="cv.html">EN</a> | <b>中</b>
+  </div>
+
+  <header>
+    <h1>赵宇轩</h1>
+    <p>博士生｜数学系｜伊利诺伊大学厄巴纳-香槟分校</p>
+  </header>
+
+  <nav>
+    <a href="index_zh.html">关于我</a>
+    <a href="research_zh.html">研究方向</a>
+    <a href="project_zh.html">经历</a>
+    <a href="teaching_zh.html">教学历史</a>
+    <a href="cv_zh.html">个人简历</a>
+  </nav>
+
+  <main>
+    <section id="cv">
+      <h2>个人简历</h2>
+
+      <h3>教育背景</h3>
+      <div class="container">
+        <span class="role-title">伊利诺伊大学厄本那-香槟分校</span>
+        <span class="role-time">伊利诺伊州厄巴纳｜2023年8月 - 至今</span>
+      </div>
+      <p>数学博士（PhD）</p>
+
+      <div class="container">
+        <span class="role-title">伊利诺伊大学厄本那-香槟分校</span>
+        <span class="role-time">伊利诺伊州厄巴纳｜2023年8月 - 2025年5月</span>
+      </div>
+      <p>数学硕士（MS）</p>
+
+      <div class="container">
+        <span class="role-title">上海科技大学</span>
+        <span class="role-time">中国上海｜2019年8月 - 2023年7月</span>
+      </div>
+      <p>数学与应用数学学士（BS）</p>
+
+      <hr>
+
+      <h3>研究经历</h3>
+      <div class="container">
+        <span class="role-title">本科毕业论文</span>
+        <span class="role-time">上海科技大学｜2023年1月 - 2023年6月</span>
+      </div>
+      <ul>
+        <li>研究无网格数值方法，用于求解流形上的偏微分方程（PDE）。</li>
+        <li>探索降低传统径向基函数有限差分（RBF-FD）与移动最小二乘（MLS）方法计算成本的局部化数值方法。</li>
+        <li>使用MATLAB与Python（NumPy）实现局部RBF-FD与MLS方法，显著减少计算消耗。</li>
+        <li>向导师组汇报研究成果，协助研究小组理解方法原理与实现方式。</li>
+      </ul>
+
+      <hr>
+
+      <h3>教学与组织经历</h3>
+      <div class="container">
+        <span class="role-title">教学助理与批改助理</span>
+        <span class="role-time">伊利诺伊大学厄巴纳-香槟分校｜2023年8月 - 今</span>
+      </div>
+      <ul>
+        <li>担任微积分III教学助理，以及微分方程、机器学习、实分析与一般拓扑等课程的批改助理。</li>
+        <li>高效回应课程平台上学生问题，提升教学支持质量。</li>
+        <li>提供详尽作业解答、及时批改作业，并根据学生请求进行公正复评。</li>
+      </ul>
+
+      <hr>
+
+      <h3>技能与兴趣</h3>
+      <p><strong>语言能力：</strong> 普通话、英语流利</p>
+      <p><strong>技术技能：</strong> Python（NumPy, Pandas, SymPy），MATLAB，LaTeX，Microsoft Office</p>
+      <p><strong>兴趣爱好：</strong> 羽毛球，徒步以及旅行</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 赵宇轩
+  </footer>
+</body>
+</html>
