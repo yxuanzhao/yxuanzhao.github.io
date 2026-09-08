@@ -6,6 +6,9 @@
   <meta name="description" content="Personal website of Yuxuan Zhao" />
   <title>Research</title>
   <link rel="stylesheet" href="styles.css" />
+  <script>window.MathJax = {tex: {inlineMath: [['\\(', '\\)'], ['$', '$']]}};</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" 
+  async></script>
 </head>
 <body>
     <!--<div class="lang-switcher">
@@ -28,23 +31,50 @@
     <main>
         <section id="research">
             <h2>Research</h2>
-            <p>I am currently working with Professor <a href="https://math.illinois.edu/directory/profile/dbcoone2" target="_blank" rel="noopener noreferrer">Daniel B. Cooney</a> at the Univeristy of Illinois Urbana-Champaign.</p>
+            <p>I am currently working with Professor <a href="https://math.illinois.edu/directory/profile/dbcoone2" target="_blank" rel="noopener noreferrer">Daniel B. Cooney</a> at the Univeristy of Illinois Urbana-Champaign. I am currently exploring research questions related to <b>Mathematical Biology</b>.</p>
 
-            <p>I am currently exploring research questions related to <b>Mathematical Biology</b>. I am particularly interested in the analysis of ordinary and partial differential equation models (ODEs and PDEs) arising in biology, sociology, and economics, using methods from dynamical systems, stability theory, and bifurcation analysis.<!-- such as reaction-diffusion systems. In addition, I have a strong interest in numerical simulation methods for solving PDEs, including finite difference schemes and related computational techniques. Although I am still in the early stages of my PhD journey, I am eager to develop innovative approaches and deepen my expertise in this area.--></p>
-            <!--<p>Stay tuned for updates on my research progress!</p>-->
+            <h3 class="pattern-title">1. Pattern Formation</h3>
+
+            <div class="research-feature">
+              <div class="research-feature-text">
+                <p>
+                  I am interested in <strong>pattern formation</strong> in nonlinear PDEs. In many systems, spatial patterns emerge when a homogeneous equilibrium loses stability, allowing small spatial perturbations to grow and develop into organized structures. My research explores pattern formation driven by different mechanisms in a variety of PDE and nonlocal models, with particular emphasis on stability and bifurcation analysis.
+                </p>
+              </div>
+
+              <div class="research-feature-media">
+                <img src="images/u_evolution.gif"
+                    alt="Simulation of pattern formation from a perturbed homogeneous state">
+              </div>
+            </div>
+
+            <h3 class="pattern-title">2. Well-Posedness and Regularity of PDEs</h3>
+
+            <div class="math-display">
+              $W^{k,p}(\Omega) \hookrightarrow C^{m,\alpha}(\overline{\Omega})$
+            </div>
+
+            <p>
+              I am interested in the <strong>well-posedness and regularity</strong> of nonlinear PDEs arising from mathematical models. Establishing existence, uniqueness, boundedness, and regularity of solutions is often essential for ensuring that a PDE model is mathematically meaningful and dynamically well behaved. My current interests focus primarily on nonlinear parabolic equations and related evolution problems.
+            </p>
+
+            <h3 class="pattern-title">3. Numerical Methods and Simulations</h3>
+
+            <p>
+              I am interested in <strong>numerical methods and simulations</strong> for dynamical systems and PDEs defined on different spatial structures. These include dynamical systems on graphs, PDEs on regular Euclidean domains, and nonlocal evolution equations on graphons. I am also interested in numerical methods for PDEs posed on smooth manifolds without boundary, particularly in understanding how the underlying geometry and spatial structure influence the dynamics and numerical approximation.
+            </p>
         </section>
 
         <hr style="border: none; height: 1px; background-color: rgba(0, 0, 0, 0.1); margin: 10px 0;">
 
         <section id="research">
           <h2>Publications and Preprints</h2>
-          <p>
-            <strong>Zhao, Y.</strong>, Zhu, K., Zhang, Y., Cooney, D. B.
-            Pattern Formation in a Spatial Public Goods Dilemma due to Diffusive or Directed Motion.
-            <em>Bulletin of Mathematical Biology</em>,
-            <strong>88</strong>, 173 (2026).
-            <a href="https://doi.org/10.1007/s11538-026-01733-0" target="_blank">[Journal]</a>
-          </p>
+
+          <ol reversed class="publication-list">
+            <li>
+              <strong>Yuxuan Zhao</strong>, Kaisheng Zhu, Yefei Zhang, and Daniel B. Cooney. Pattern Formation in a Spatial Public Goods Dilemma due to Diffusive or Directed Motion. <em>Bulletin of Mathematical Biology</em>, <strong>88</strong>, 173 (2026). <a href="https://doi.org/10.1007/s11538-026-01733-0" target="_blank" rel="noopener noreferrer">[Journal]</a>
+            </li>
+          </ol>
         </section>
 
         <hr style="border: none; height: 1px; background-color: rgba(0, 0, 0, 0.1); margin: 10px 0;">
@@ -54,18 +84,6 @@
           <p>
             <strong>Poster presentation</strong>, <i>Evolutionary Games: Mathematical Theory and Biological Insights,</i> National Institute for Theory and Mathematics in Biology (<a href="https://www.nitmb.org" target="_blank" rel="noopener noreferrer">NITMB</a>), Chicago, May 2026.
           </p>
-          <!--<p>
-            <strong>A Spatial Model for the Public Goods Dilemma</strong>
-            <br>Mathematical Biology Reading Group, Department of Mathematics, UIUC<br>
-            <em>October 29, 2025</em><br>
-            [<a href="https://drive.google.com/file/d/1NkUTJSzUOjs8kl49vbRqEmP3WqmDx-LG/view?usp=sharing" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>]<br>
-          </p>
-          <p>
-            <strong>Continuum Limit: Derivation and Applications in Mathematical Models</strong>
-            <br>Mathematical Biology Reading Group, Department of Mathematics, UIUC<br>
-            <em>October 8, 2025</em><br>
-            [<a href="https://drive.google.com/file/d/1K7IRxkdtyXJwq7Q5Gnp9BfvWer9ObvVt/view?usp=sharing" target="_blank" rel="noopener noreferrer">Slides (PDF)</a>]<br>
-          </p>-->
         </section>
     </main>
 
